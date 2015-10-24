@@ -140,6 +140,6 @@ The currently playing track gets the class `playing`:
 </ul>
 ```
 
-## SUpport/Bugs
+## Support/Bugs
 
 If you find something weird just open a new issue on GitHub. You can also contact me via [email](mailto:c.schellenberg@me.com) if you have any problems using SND.
