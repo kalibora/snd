@@ -1,0 +1,23 @@
+# Site name (site.name)
+# ===============
+name: snd
+
+# Site description (site.description)
+# ===============
+description: jQuery Audio Player
+
+# Site author (site.author)
+# ===============
+author: Christian Schellenberg
+
+# Site path
+# ===============
+path: /snd/
+
+# Excluded files
+# ===============
+exclude: [node_modules, README.md, gulpfile.js, package.json, Rakefile, LICENSE, sass]
+
+# Permalink style
+# ===============
+permalink: pretty

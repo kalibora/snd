@@ -1,0 +1,42 @@
+/*
+
+   FLOATS
+
+   1. Floated elements are automatically rendered as block level elements.
+      Setting floats to display inline will fix the double margin bug in
+      ie6. You know... just in case.
+
+   2. Don't forget to clearfix your floats with .cf
+
+   Base:
+     f = float
+
+   Modifiers:
+     l = left
+     r = right
+     n = none
+
+   Media Query Extemsioms:
+     -ms = mobile-small
+     -m  = mobile
+     -l  = large
+
+*/
+
+
+
+.fl { float: left;  display: inline; }
+.fr { float: right; display: inline; }
+.fn { float: none; }
+
+@media screen and (max-width: 30em) {
+  .fl-ms { float: left; display: inline; }
+  .fr-ms { float: right; display: inline; }
+  .fn-ms { float: none !important; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fl-m { float: left; display: inline; }
+  .fr-m { float: right; display: inline; }
+  .fn-m { float: none; }
+}

@@ -1,0 +1,93 @@
+/*
+
+   HEIGHTS
+
+*/
+
+/* Height Scale */
+
+.h1 {  height: 1rem; }
+.h2 {  height: 2rem; }
+.h3 {  height: 4rem; }
+.h4 {  height: 8rem; }
+.h5 {  height: 16rem; }
+
+.h-10 { height:  10%; }
+.h-20 { height:  20%; }
+.h-25 { height:  25%; }
+.h-30 { height:  30%; }
+.h-40 { height:  40%; }
+.h-50 { height:  50%; }
+.h-60 { height:  60%; }
+.h-70 { height:  70%; }
+.h-75 { height:  75%; }
+.h-80 { height:  80%; }
+.h-90 { height:  90%; }
+.h-100 { height: 100%; }
+
+/* String Properties */
+
+.h-bb { height: border-box; }
+.h-cb { height: content-box; }
+.h-mx { height: max-content; }
+.h-mn { height: min-content; }
+.h-av { height: available; }
+.h-fc { height: fit-content; }
+.h-at { height: auto; }
+.h-i {  height: inherit; }
+
+@media screen and (max-width: 30em) {
+  .h-1-ms {  height: 1rem; }
+  .h-2-ms {  height: 2rem; }
+  .h-3-ms {  height: 4rem; }
+  .h-4-ms {  height: 8rem; }
+  .h-5-ms {  height: 16rem; }
+  .h-10-ms  { height: 10%; }
+  .h-20-ms  { height: 20%; }
+  .h-25-ms  { height: 25%; }
+  .h-30-ms  { height: 30%; }
+  .h-40-ms  { height: 40%; }
+  .h-50-ms  { height: 50%; }
+  .h-60-ms  { height: 60%; }
+  .h-70-ms  { height: 70%; }
+  .h-75-ms  { height: 75%; }
+  .h-80-ms  { height: 80%; }
+  .h-90-ms  { height: 90%; }
+  .h-100-ms { height: 100%; }
+  .h-bb-ms { height: border-box; }
+  .h-cb-ms { height: content-box; }
+  .h-mx-ms { height: max-content; }
+  .h-mn-ms { height: min-content; }
+  .h-av-ms { height: available; }
+  .h-fc-ms { height: fit-content; }
+  .h-at-ms { height: auto; }
+  .h-i-ms {  height: inherit; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .h1-m {      height: 1rem; }
+  .h2-m {      height: 2rem; }
+  .h3-m {      height: 4rem; }
+  .h4-m {      height: 8rem; }
+  .h5-m {      height: 16rem; }
+  .h-10-m  { height: 10%; }
+  .h-20-m  { height: 20%; }
+  .h-25-m  { height: 25%; }
+  .h-30-m  { height: 30%; }
+  .h-40-m  { height: 40%; }
+  .h-50-m  { height: 50%; }
+  .h-60-m  { height: 60%; }
+  .h-70-m  { height: 70%; }
+  .h-75-m  { height: 75%; }
+  .h-80-m  { height: 80%; }
+  .h-90-m  { height: 90%; }
+  .h-100-m { height: 100%; }
+  .h-bb-m {    height: border-box; }
+  .h-cb-m {    height: content-box; }
+  .h-mx-m {    height: max-content; }
+  .h-mn-m {    height: min-content; }
+  .h-av-m {    height: available; }
+  .h-fc-m {    height: fit-content; }
+  .h-at-m {    height: auto; }
+  .h-i-m {     height: inherit; }
+}

@@ -1,0 +1,54 @@
+/*
+
+    OVERFLOWS
+
+ */
+
+.of-vis { overflow: visible; }
+.of-hid,.oh { overflow: hidden; }
+.of-scr { overflow: scroll; }
+.of-aut { overflow: auto; }
+
+.ofx-vis { overflow-x: visible; }
+.ofx-hid { overflow-x: hidden; }
+.ofx-scr { overflow-x: scroll; }
+.ofx-aut { overflow-x: auto; }
+
+.ofy-vis { overflow-y: visible; }
+.ofy-hid { overflow-y: hidden; }
+.ofy-scr { overflow-y: scroll; }
+.ofy-aut { overflow-y: auto; }
+
+@media screen and (max-width: 30em) {
+  .of-vis-ms { overflow: visible; }
+  .of-hid-ms,.oh { overflow: hidden; }
+  .of-scr-ms { overflow: scroll; }
+  .of-aut-ms { overflow: auto; }
+
+  .ofx-vis-ms { overflow-x: visible; }
+  .ofx-hid-ms { overflow-x: hidden; }
+  .ofx-scr-ms { overflow-x: scroll; }
+  .ofx-aut-ms { overflow-x: auto; }
+
+  .ofy-vis-ms { overflow-y: visible; }
+  .ofy-hid-ms { overflow-y: hidden; }
+  .ofy-scr-ms { overflow-y: scroll; }
+  .ofy-aut-ms { overflow-y: auto; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .of-vis-m { overflow: visible; }
+  .of-hid-m { overflow: hidden; }
+  .of-scr-m { overflow: scroll; }
+  .of-aut-m { overflow: auto; }
+
+  .ofx-vis-m { overflow-x: visible; }
+  .ofx-hid-m { overflow-x: hidden; }
+  .ofx-scr-m { overflow-x: scroll; }
+  .ofx-aut-m { overflow-x: auto; }
+
+  .ofy-vis-m { overflow-y: visible; }
+  .ofy-hid-m { overflow-y: hidden; }
+  .ofy-scr-m { overflow-y: scroll; }
+  .ofy-aut-m { overflow-y: auto; }
+}

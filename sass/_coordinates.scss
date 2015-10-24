@@ -1,0 +1,63 @@
+/* 
+
+   COORDINATES 
+
+*/
+
+.top-0    { top:   0; }
+.left-0   { left:  0; }
+.right-0  { right: 0; }
+.bottom-0 { bottom: 0; }
+
+.top-1    { top:   1rem; }
+.left-1   { left:  1rem; }
+.right-1  { right: 1rem; }
+.bottom-1 { bottom: 1rem; }
+
+.top-2    { top:   2rem; }
+.left-2   { left:  2rem; }
+.right-2  { right: 2rem; }
+.bottom-2 { bottom: 2rem; }
+
+.top-4    { top:   4rem; }
+.left-4   { left:  4rem; }
+.right-4  { right: 4rem; }
+.bottom-4 { bottom: 4rem; }
+
+@media screen and (max-width: 30em) {
+  .top-0-ms    { top:   0; }
+  .left-0-ms   { left:  0; }
+  .right-0-ms  { right: 0; }
+  .bottom-0-ms { bottom: 0; }
+  .top-1-ms    { top:   1rem; }
+  .left-1-ms   { left:  1rem; }
+  .right-1-ms  { right: 1rem; }
+  .bottom-1-ms { bottom: 1rem; }
+  .top-2-ms    { top:   2rem; }
+  .left-2-ms   { left:  2rem; }
+  .right-2-ms  { right: 2rem; }
+  .bottom-2-ms { bottom: 2rem; }
+  .top-4-ms    { top:   4rem; }
+  .left-4-ms   { left:  4rem; }
+  .right-4-ms  { right: 4rem; }
+  .bottom-4-ms { bottom: 4rem; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .top-0-m    { top:   0; }
+  .left-0-m   { left:  0; }
+  .right-0-m  { right: 0; }
+  .bottom-0-m { bottom: 0; }
+  .top-1-m    { top:   1rem; }
+  .left-1-m   { left:  1rem; }
+  .right-1-m  { right: 1rem; }
+  .bottom-1-m { bottom: 1rem; }
+  .top-2-m    { top:   2rem; }
+  .left-2-m   { left:  2rem; }
+  .right-2-m  { right: 2rem; }
+  .bottom-2-m { bottom: 2rem; }
+  .top-4-m    { top:   4rem; }
+  .left-4-m   { left:  4rem; }
+  .right-4-m  { right: 4rem; }
+  .bottom-4-m { bottom: 4rem; }
+}

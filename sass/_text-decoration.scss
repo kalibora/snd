@@ -1,0 +1,19 @@
+/*
+
+   TEXT DECORATION
+
+*/
+
+.underline  { text-decoration: underline; }
+.no-underline   { text-decoration: none; }
+
+
+@media screen and (max-width: 30em) {
+  .underline-ms  { text-decoration: underline; }
+  .no-underline-ms   { text-decoration: none; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .underline-m  { text-decoration: underline; }
+  .no-underline-m   { text-decoration: none; }
+}

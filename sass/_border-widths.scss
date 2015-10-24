@@ -1,0 +1,46 @@
+/*
+
+   BORDER WIDTHS
+
+   Base:
+     bw = border-width
+
+   Modifiers:
+     0 = 0 width border
+     1 = 1st step in border-width scale
+     2 = 2nd step in border-width scale
+     3 = 3rd step in border-width scale
+     4 = 4th step in border-width scale
+     5 = 5th step in border-width scale
+
+   Media Query Extemsioms:
+     -ms = mobile-small
+     -m  = mobile
+     -l  = large
+
+*/
+
+.bw0 { border-width: 0; }
+.bw1 { border-width: .125rem; }
+.bw2 { border-width: .25rem; }
+.bw3 { border-width: .5rem; }
+.bw4 { border-width: .75rem; }
+.bw5 { border-width: 1rem; }
+
+@media screen and (max-width: 30em) {
+  .bw0-ms { border-width: 0; }
+  .bw1-ms { border-width: .125rem; }
+  .bw2-ms { border-width: .25rem; }
+  .bw3-ms { border-width: .5rem; }
+  .bw4-ms { border-width: .75rem; }
+  .bw5-ms { border-width: 1rem; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .bw0-m { border-width: 0; }
+  .bw1-m { border-width: .125rem; }
+  .bw2-m { border-width: .25rem; }
+  .bw3-m { border-width: .5rem; }
+  .bw4-m { border-width: .75rem; }
+  .bw5-m { border-width: 1rem; }
+}

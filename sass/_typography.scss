@@ -1,0 +1,35 @@
+/*
+
+   TYPOGRAPHY
+
+*/
+
+.measure  {
+  max-width: 30em;
+}
+
+.indent   {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 30em){
+  .measure-ms  {
+    max-width: 30em;
+  }
+  .indent-ms   {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .measure-m  { max-width: 30em; }
+  .indent-m  {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

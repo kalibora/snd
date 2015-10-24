@@ -1,0 +1,101 @@
+/*
+
+   CUSTOM STYLES
+
+*/
+
+.header {
+    background-image: url(/snd/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.f7 {
+    font-size: 10rem;
+}
+
+.w6 {
+    max-width: 18rem;
+}
+
+.trans-bg {
+    transition: background-color .09s ease-in;
+}
+
+.snd {
+    background-color: $black-90;
+    height: 100vh;
+}
+
+.snd h1 {
+    margin-left: 3.4rem;
+}
+
+.snd p {
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.b--custom {
+    border-color: #00ff58;
+}
+
+.bg-custom {
+    background-color: #00ff58;
+}
+
+.bg-custom:hover {
+    background-color: #00c644;
+}
+
+.bg-custom:active {
+    background-color: #00a238;
+}
+
+.toggle-play, .toggle-pause {
+    width: 11rem;
+    height: 11rem;
+    background-color: rgba(0, 255, 88, 0.3);
+}
+
+.toggle-play:hover, .toggle-pause:hover {
+    border: .4rem solid #00ff58;
+    background-color: rgba(0, 255, 88, 0.5);
+}
+
+.toggle-play:active, .toggle-pause:active {
+    border: .4rem solid rgba(0, 255, 88, 0.3);
+    background-color: rgba(0, 255, 88, 0.2);
+}
+
+.toggle-play:active svg, .toggle-pause:active svg {
+    fill: rgba(0, 255, 88, 0.2);
+}
+
+.toggle-play svg, .toggle-pause svg {
+    width: 4.5rem;
+    fill: #00ff58;
+}
+
+.toggle-play {
+    padding-left: .4rem;
+}
+
+.geo {
+    width: 1.3rem;
+}
+
+.geo-small {
+    width: 1rem;
+}
+
+@media screen and (max-width: 30em) {
+    .f8-ms {
+        font-size: 7rem;
+    }
+    
+    .snd h1 {
+        margin-left: 1.55rem;
+    }
+}

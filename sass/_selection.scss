@@ -1,0 +1,15 @@
+/*
+
+  SELECTION
+
+*/
+
+::selection {
+    background: $selection-background;
+    color: $selection-color;
+}
+
+::-moz-selection {
+    background: $selection-background;
+    color: $selection-color;
+}

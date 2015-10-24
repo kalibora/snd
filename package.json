@@ -1,0 +1,18 @@
+{
+  "name": "snd",
+  "description": "jQuery Audio Plugin",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrsbrg/snd.git"
+  },
+  "author": "Christian Schellenberg",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uncss": "^1.0.4"
+  }
+}

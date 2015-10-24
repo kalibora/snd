@@ -1,0 +1,47 @@
+/*
+
+   FONT WEIGHT
+
+*/
+
+.normal { font-weight: normal; }
+.b      { font-weight: bold; }
+.thin   { font-weight: 100; }
+.book   { font-weight: 400; }
+.semibold   { font-weight: 500; }
+.bold   { font-weight: 600; }
+.heavy  { font-weight: 700; }
+.ultrabold  { font-weight: 900; }
+
+@media screen and (max-width: 30em) {
+  .normal-ms { font-weight: normal; }
+  .b-ms      { font-weight: bold; }
+  .thin-ms   { font-weight: 100; }
+  .book-ms   { font-weight: 400; }
+  .semibold-ms   { font-weight: 500; }
+  .bold-ms   { font-weight: 600; }
+  .heavy-ms   { font-weight: 700; }
+  .ultrabold-ms  { font-weight: 900; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .normal-m { font-weight: normal; }
+  .b-m      { font-weight: bold; }
+  .thin-m   { font-weight: 100; }
+  .book-m   { font-weight: 400; }
+  .semibold-m   { font-weight: 500; }
+  .bold-m   { font-weight: 600; }
+  .heavy-m  { font-weight: 700; }
+  .ultrabold-m  { font-weight: 900; }
+}
+
+@media screen and (min-width: 60em) {
+  .normal-l { font-weight: normal; }
+  .b-l      { font-weight: bold; }
+  .thin-l   { font-weight: 100; }
+  .book-l   { font-weight: 400; }
+  .semibold-l   { font-weight: 500; }
+  .bold-l   { font-weight: 600; }
+  .heavy-l  { font-weight: 700; }
+  .ultrabold-l  { font-weight: 900; }
+}

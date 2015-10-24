@@ -1,0 +1,34 @@
+/*
+
+   TYPE SCALE
+
+*/
+
+.mega  { font-size: 4rem; }
+.big   { font-size: 3rem; }
+.f1    { font-size: 2rem; }
+.f2    { font-size: 1.5rem; }
+.f3    { font-size: 1.2rem; }
+.f4    { font-size: 1rem; }
+.f5,
+.small { font-size: .85rem; }
+
+@media screen and (max-width: 30em) {
+ .mega-ms { font-size: 4rem; }
+ .big-ms  { font-size: 3rem; }
+ .f1-ms {   font-size: 2rem; }
+ .f2-ms {   font-size: 1.5rem; }
+ .f3-ms {   font-size: 1.25em; }
+ .f4-ms {   font-size: 1rem; }
+ .f5-ms {   font-size: .85rem; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+ .mega-m { font-size: 4rem; }
+ .big-m  { font-size: 3rem; }
+ .f1-m {   font-size: 2rem; }
+ .f2-m {   font-size: 1.5rem; }
+ .f3-m {   font-size: 1.25rem; }
+ .f4-m {   font-size: 1rem; }
+ .f5-m {   font-size: .85rem; }
+}

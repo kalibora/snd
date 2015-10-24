@@ -1,0 +1,24 @@
+/*
+
+    POSITIONING
+
+ */
+
+.pos-stat { position: static; }
+.pos-rel  { position: relative; }
+.pos-abs  { position: absolute; }
+.pos-fix  { position: fixed; }
+
+@media screen and (max-width: 30em) {
+  .pos-stat-ms { position: static; }
+  .pos-rel-ms  { position: relative; }
+  .pos-abs-ms  { position: absolute; }
+  .pos-fix-ms  { position: fixed; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .pos-stat-m { position: static; }
+  .pos-rel-m  { position: relative; }
+  .pos-abs-m  { position: absolute; }
+  .pos-fix-m  { position: fixed; }
+}

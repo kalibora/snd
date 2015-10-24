@@ -1,0 +1,34 @@
+/*
+
+   BORDER STYLES
+
+   Base:
+     bs = border-style
+
+   Modifiers:
+     none   = none
+     dotted = dotted
+     solid  = solid
+
+   Media Query Extemsioms:
+     -ms = mobile-small
+     -m  = mobile
+     -l  = large
+
+ */
+
+.bs-none {   border-style: none; }
+.bs-dotted { border-style: dotted; }
+.bs-solid {  border-style: solid; }
+
+@media screen and (max-width: 30em) {
+  .bs-none-ms {   border-style: none; }
+  .bs-dotted-ms { border-style: dotted; }
+  .bs-solid-ms {  border-style: solid; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .bs-none-m {   border-style: none; }
+  .bs-dotted-m { border-style: dotted; }
+  .bs-solid-m {  border-style: solid; }
+}
