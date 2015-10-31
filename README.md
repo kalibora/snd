@@ -33,7 +33,7 @@ You can also specify multiple audio sources for a playlist:
 
 ```javascript
 $(document).ready(function() {
-    $('.snd').snd({'source/to/audio','source/to/audio','source/to/audio'});
+    $('.snd').snd(['source/to/audio','source/to/audio','source/to/audio']);
 });
 ```
 
