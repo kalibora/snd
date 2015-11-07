@@ -8,6 +8,7 @@
     background-image: url(/snd/img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .snd {
-    background-color: $black-60;
+    background-color: $black-70;
     height: 100vh;
 }
 

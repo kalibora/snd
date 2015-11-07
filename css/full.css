@@ -4523,6 +4523,7 @@ a:focus {
   background-image: url(/snd/img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh; }
 
 .f7 {
@@ -4535,7 +4536,7 @@ a:focus {
   transition: background-color 0.09s ease-in; }
 
 .snd {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100vh; }
 
 .snd h1 {
