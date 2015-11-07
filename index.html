@@ -55,6 +55,10 @@ layout: default
     <div class="mtm pam bg-light-gray br2 f5 ofx-scr ws-nowrap mbl">
         <code class="lh-copy">&lt;button <font class="green">class</font>=<font class="red">"next"</font>&gt;Next&lt;/button&gt;</code>
     </div>
+    <a class="f2 heavy tracked black-90 hide-child" name="controls-time" href="#controls-time">TIME<svg class="geo-small mlxs child" viewBox="0 0 32 32"><path d="M0 16 A8 8 0 0 1 8 8 L14 8 A8 8 0 0 1 22 16 L18 16 A4 4 0 0 0 14 12 L8 12 A4 4 0 0 0 4 16 A4 4 0 0 0 8 20 L10 24 L8 24 A8 8 0 0 1 0 16z M22 8 L24 8 A8 8 0 0 1 32 16 A8 8 0 0 1 24 24 L18 24 A8 8 0 0 1 10 16 L14 16 A4 4 0 0 0 18 20 L24 20 A4 4 0 0 0 28 16 A4 4 0 0 0 24 12z"></path></svg></a>
+    <div class="mtm pam bg-light-gray br2 f5 ofx-scr ws-nowrap mbl">
+        <code class="lh-copy">&lt;input <font class="green">class</font>=<font class="red">"time"</font> <font class="green">type</font>=<font class="red">"range"</font> <font class="green">value</font>=<font class="red">"0"</font> /&gt;</code>
+    </div>
     <a class="f2 heavy tracked black-90 hide-child" name="controls-current-time" href="#controls-current-time">CURRENT TIME<svg class="geo-small mlxs child" viewBox="0 0 32 32"><path d="M0 16 A8 8 0 0 1 8 8 L14 8 A8 8 0 0 1 22 16 L18 16 A4 4 0 0 0 14 12 L8 12 A4 4 0 0 0 4 16 A4 4 0 0 0 8 20 L10 24 L8 24 A8 8 0 0 1 0 16z M22 8 L24 8 A8 8 0 0 1 32 16 A8 8 0 0 1 24 24 L18 24 A8 8 0 0 1 10 16 L14 16 A4 4 0 0 0 18 20 L24 20 A4 4 0 0 0 28 16 A4 4 0 0 0 24 12z"></path></svg></a>
     <div class="mtm pam bg-light-gray br2 f5 ofx-scr ws-nowrap mbl">
         <code class="lh-copy">&lt;span <font class="green">class</font>=<font class="red">"curenttime"</font>&gt;00:00&lt;/span&gt;</code>
@@ -71,6 +75,49 @@ layout: default
     <div class="mtm pam bg-light-gray br2 f5 ofx-scr ws-nowrap mbl">
         <code class="lh-copy">&lt;ul <font class="green">class</font>=<font class="red">"playlist"</font>&gt;<br /><font class="plm">&lt;li <font class="green">class</font>=<font class="red">"playlist_item playing"</font>&gt;Track 1&lt;/li&gt;<br /><font class="plm">&lt;li <font class="green">class</font>=<font class="red">"playlist_item"</font>&gt;Track 2&lt;/li&gt;</font><br /><font class="plm">&lt;li <font class="green">class</font>=<font class="red">"playlist_item"</font>&gt;Track 3&lt;/li&gt;</font><br />&lt;/ul&gt;</code>
     </div>
+    <p></p>
+    <a class="f1 heavy tracked black-90 hide-child" name="examples" href="#examples">EXAMPLES<svg class="geo mlxs child" viewBox="0 0 32 32"><path d="M0 16 A8 8 0 0 1 8 8 L14 8 A8 8 0 0 1 22 16 L18 16 A4 4 0 0 0 14 12 L8 12 A4 4 0 0 0 4 16 A4 4 0 0 0 8 20 L10 24 L8 24 A8 8 0 0 1 0 16z M22 8 L24 8 A8 8 0 0 1 32 16 A8 8 0 0 1 24 24 L18 24 A8 8 0 0 1 10 16 L14 16 A4 4 0 0 0 18 20 L24 20 A4 4 0 0 0 28 16 A4 4 0 0 0 24 12z"></path></svg></a>
+    <div class="snd2 mtl mbxl">
+        <div class="toggle">
+            <button title="Fuck The Summer Up - KRNE" class="toggle-play bg-light-gray dim"><svg class="db w2 center" viewBox="0 0 32 32"><path d="M4 4 L28 16 L4 28 z"></path></svg></button>
+            <button title="Fuck The Summer Up - KRNE" class="toggle-pause bg-light-gray dim"><svg class="db w2 center" viewBox="0 0 32 32"><path d="M4 4 H12 V28 H4 z M20 4 H28 V28 H20 z"></path></svg></button>
+        </div>
+        <div class="timecontainer">
+            <input class="time fl" type="range" value="0" />
+        </div>
+    </div>
+    <div class="snd3 mbm ptl">
+        <div class="toggle">
+            <button title="King Kong - Kura &amp; Tony Junior" class="toggle-play bg-light-gray dim"><svg class="db w2 center" viewBox="0 0 32 32"><path d="M4 4 L28 16 L4 28 z"></path></svg></button>
+            <button title="King Kong - Kura &amp; Tony Junior" class="toggle-pause bg-light-gray dim"><svg class="db w2 center" viewBox="0 0 32 32"><path d="M4 4 H12 V28 H4 z M20 4 H28 V28 H20 z"></path></svg></button>
+        </div>
+        <div class="timecontainer">
+            <input class="time fl" type="range" value="0" />
+        </div>
+        <span class="currenttime f5 gray">00:00</span>
+        <span class="duration f5 gray fr">00:00</span>
+    </div>
+    <div class="snd4 mbxl ptl">
+        <div class="toggle">
+            <button class="prev bg-light-gray dim"><svg class="db w2 center" viewBox="0 0 32 32"><path d="M4 4 H8 V14 L28 4 V28 L8 18 V28 H4 z"></path></svg></button>
+            <button class="toggle-play bg-light-gray dim"><svg class="db w2 center" viewBox="0 0 32 32"><path d="M4 4 L28 16 L4 28 z"></path></svg></button>
+            <button class="toggle-pause bg-light-gray dim"><svg class="db w2 center" viewBox="0 0 32 32"><path d="M4 4 H12 V28 H4 z M20 4 H28 V28 H20 z"></path></svg></button>
+            <button class="next bg-light-gray dim"><svg class="db w2 center" viewBox="0 0 32 32"><path d="M4 4 L24 14 V4 H28 V28 H24 V18 L4 28 z"></path></svg></button>
+        </div>
+        <div class="timecontainer pbxs">
+            <input class="time fl" type="range" value="0" />
+        </div>
+        <ul class="playlist list mtxl">
+            <li class="playlist_item pts pbs plm prm bg-light-gray f5 gray dim mbxs">The Buzz - Hermitude</li>
+            <li class="playlist_item pts pbs plm prm bg-light-gray f5 gray dim mbxs">Daft Ragga - Afrojack</li>
+            <li class="playlist_item pts pbs plm prm bg-light-gray f5 gray dim">Piranha - chrsbrg</li>
+        </ul>
+    </div>
+    <script>
+    $('.snd2').snd('{{ site.path }}sound/fuck-the-summer-up-krne.mp3');
+    $('.snd3').snd('{{ site.path }}sound/king-kong-kura-tony-junior.mp3');
+    $('.snd4').snd(['{{ site.path }}sound/the-buzz-hermitude.mp3','{{ site.path }}sound/daft-ragga-afrojack.mp3','{{ site.path }}sound/piranha-chrsbrg.mp3']);
+    </script>
     <div class="bb b--light-gray mtl mbl"></div>
     <a class="f2 heavy tracked black-90 hide-child" name="support-bugs" href="#support-bugs">SUPPORT/BUGS<svg class="geo-small mlxs child" viewBox="0 0 32 32"><path d="M0 16 A8 8 0 0 1 8 8 L14 8 A8 8 0 0 1 22 16 L18 16 A4 4 0 0 0 14 12 L8 12 A4 4 0 0 0 4 16 A4 4 0 0 0 8 20 L10 24 L8 24 A8 8 0 0 1 0 16z M22 8 L24 8 A8 8 0 0 1 32 16 A8 8 0 0 1 24 24 L18 24 A8 8 0 0 1 10 16 L14 16 A4 4 0 0 0 18 20 L24 20 A4 4 0 0 0 28 16 A4 4 0 0 0 24 12z"></path></svg></a>
     <p class="mtm lh-copy">If you find something weird just open a new issue on <a class="black underline" target="_blank" href="https://github.com/chrsbrg/snd">GitHub</a>. You can also contact me via <a class="black underline" href="mailto:c.schellenberg@me.com">email</a> if you have any problems using SND.</p>

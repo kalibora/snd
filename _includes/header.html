@@ -1,7 +1,7 @@
-<section class="header w-100 dt sans-serif">
+<section class="header w-100 dt sans-serif" style="background-image:url({{ site.path }}img/bg.jpg);">
     <div class="tc dtc v-mid snd w-100">
         <div class="fadeIn">
-            <a class="f4 heavy tracked black bg-white br2 pas dim" target="_blank" href="/">CHRSBRG</a>
+            <a class="f4 heavy tracked black bg-white br2 pas dim" target="_blank" href="http://chrs.cc">CHRSBRG</a>
             <h1 class="f7 f8-ms white tracked lh-title">SND</h1>
             <p class="f3 bold white">jQuery Audio Player &middot; v0.9</p>
             <div class="toggle">
@@ -10,5 +10,5 @@
             </div>
         </div>
     </div>
-    <script>$('.snd').snd('/snd/sound/813-prpl-drunc-mad-decent.mp3');</script>
+    <script>$('.snd').snd('{{ site.path }}sound/813-prpl-drunc-mad-decent.mp3');</script>
 </section>

@@ -4520,11 +4520,11 @@ a:focus {
 
 */
 .header {
-  background: url(/snd/img/bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh; }
 
 .f7 {
@@ -4535,17 +4535,6 @@ a:focus {
 
 .trans-bg {
   transition: background-color 0.09s ease-in; }
-
-.snd {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100vh; }
-
-.snd h1 {
-  margin-left: 3.4rem; }
-
-.snd p {
-  margin-top: -1.5rem;
-  margin-bottom: 1.5rem; }
 
 .b--custom {
   border-color: #00ff58; }
@@ -4559,34 +4548,219 @@ a:focus {
 .bg-custom:active {
   background-color: #00a238; }
 
-.toggle-play, .toggle-pause {
-  width: 11rem;
-  height: 11rem;
-  background-color: rgba(0, 255, 88, 0.3); }
-
-.toggle-play:hover, .toggle-pause:hover {
-  border: .4rem solid #00ff58;
-  background-color: rgba(0, 255, 88, 0.5); }
-
-.toggle-play:active, .toggle-pause:active {
-  border: 0.4rem solid rgba(0, 255, 88, 0.3);
-  background-color: rgba(0, 255, 88, 0.2); }
-
-.toggle-play:active svg, .toggle-pause:active svg {
-  fill: rgba(0, 255, 88, 0.2); }
-
-.toggle-play svg, .toggle-pause svg {
-  width: 4.5rem;
-  fill: #00ff58; }
-
-.toggle-play {
-  padding-left: .4rem; }
-
 .geo {
   width: 1.3rem; }
 
 .geo-small {
   width: 1rem; }
+
+.snd {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh; }
+  .snd .toggle-play, .snd .toggle-pause {
+    width: 11rem;
+    height: 11rem;
+    background-color: rgba(0, 255, 88, 0.3); }
+  .snd .toggle-play:hover, .snd .toggle-pause:hover {
+    border: .4rem solid #00ff58;
+    background-color: rgba(0, 255, 88, 0.5); }
+  .snd .toggle-play:active, .snd .toggle-pause:active {
+    border: 0.4rem solid rgba(0, 255, 88, 0.3);
+    background-color: rgba(0, 255, 88, 0.2); }
+  .snd .toggle-play:active svg, .snd .toggle-pause:active svg {
+    fill: rgba(0, 255, 88, 0.2); }
+  .snd .toggle-play svg, .snd .toggle-pause svg {
+    width: 4.5rem;
+    fill: #00ff58; }
+  .snd .toggle-play {
+    padding-left: .4rem; }
+  .snd h1 {
+    margin-left: 3.4rem; }
+  .snd p {
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem; }
+
+.snd2 .toggle-play, .snd2 .toggle-pause {
+  width: 4rem;
+  height: 4rem;
+  border: none; }
+
+.snd2 .toggle-play svg, .snd2 .toggle-pause svg {
+  width: 2.5rem;
+  fill: #a8a8a8; }
+
+.snd2 .toggle-play {
+  padding-left: .4rem; }
+
+.snd2 .timecontainer {
+  max-width: 42.8rem;
+  margin-left: 5rem;
+  margin-top: -3.9rem; }
+
+.snd2 input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin-top: 1.6rem;
+  cursor: pointer; }
+
+.snd2 input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: .7rem;
+  background-color: #eee;
+  border: 0.2rem solid #eee; }
+
+.snd2 input[type=range]::-moz-range-track {
+  width: 100%;
+  height: .5rem;
+  background-color: #eee;
+  border: 0.2rem solid #eee; }
+
+.snd2 input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.5rem;
+  width: .25rem;
+  background: #a8a8a8;
+  margin-top: -.56rem; }
+
+.snd2 input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.5rem;
+  width: .25rem;
+  background: #a8a8a8;
+  margin-top: -.56rem;
+  border: none;
+  border-radius: 0; }
+
+.snd3 .toggle-play, .snd3 .toggle-pause {
+  width: 4rem;
+  height: 4rem;
+  border: none; }
+
+.snd3 .toggle-play svg, .snd3 .toggle-pause svg {
+  width: 2.5rem;
+  fill: #a8a8a8; }
+
+.snd3 .toggle-play {
+  padding-left: .4rem; }
+
+.snd3 .timecontainer {
+  max-width: 42.8rem;
+  margin-left: 5rem;
+  margin-top: -3.9rem; }
+
+.snd3 input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin-top: 1.1rem;
+  margin-bottom: .5rem;
+  cursor: pointer; }
+
+.snd3 input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: .7rem;
+  background-color: #eee;
+  border: 0.2rem solid #eee; }
+
+.snd3 input[type=range]::-moz-range-track {
+  width: 100%;
+  height: .5rem;
+  background-color: #eee;
+  border: 0.2rem solid #eee; }
+
+.snd3 input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.5rem;
+  width: .25rem;
+  background: #a8a8a8;
+  margin-top: -.56rem; }
+
+.snd3 input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.5rem;
+  width: .25rem;
+  background: #a8a8a8;
+  margin-top: -.56rem;
+  border: none;
+  border-radius: 0; }
+
+.snd3 .currenttime {
+  margin-left: 5rem; }
+
+.snd3 .duration {
+  margin-right: .3rem; }
+
+.snd4 .toggle-play, .snd4 .toggle-pause, .snd4 .prev, .snd4 .next {
+  width: 4rem;
+  height: 4rem;
+  border: none; }
+
+.snd4 .toggle-play svg, .snd4 .toggle-pause svg, .snd4 .prev svg, .snd4 .next svg {
+  width: 2.5rem;
+  fill: #a8a8a8; }
+
+.snd4 .toggle-play {
+  padding-left: .4rem; }
+
+.snd4 .timecontainer {
+  max-width: 36rem;
+  margin-left: 13.5rem;
+  margin-top: -3.9rem; }
+
+.snd4 input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+  cursor: pointer; }
+
+.snd4 input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: .7rem;
+  background-color: #eee;
+  border: 0.2rem solid #eee; }
+
+.snd4 input[type=range]::-moz-range-track {
+  width: 100%;
+  height: .5rem;
+  background-color: #eee;
+  border: 0.2rem solid #eee; }
+
+.snd4 input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.5rem;
+  width: .25rem;
+  background: #a8a8a8;
+  margin-top: -.56rem; }
+
+.snd4 input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.5rem;
+  width: .25rem;
+  background: #a8a8a8;
+  margin-top: -.56rem;
+  border: none;
+  border-radius: 0; }
+
+.snd4 .playlist_item {
+  cursor: pointer; }
+
+.snd4 .playing {
+  background-color: #c4c4c4; }
+
+input[type=range]:focus {
+  outline: none; }
 
 @media screen and (max-width: 30em) {
   .f8-ms {
