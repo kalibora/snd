@@ -4520,7 +4520,7 @@ a:focus {
 
 */
 .header {
-  background: url(/snd/img/bg.jpg) no-repeat center center fixed;
+  background: url(/snd/img/bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4594,11 +4594,10 @@ a:focus {
   .snd h1 {
     margin-left: 1.55rem; } }
 
-/*@media screen and (min-width: 60em) {
-    .header {
-        background-attachment: fixed;
-    }
-}*/
+@media screen and (min-width: 60em) {
+  .header {
+    background-attachment: fixed; } }
+
 /*
 
    TEXT DECORATION
