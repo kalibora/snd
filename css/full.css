@@ -4,7 +4,7 @@
 
 */
 /* Variables */
-/*! normalize.css v2.1.2 | MIT Licemse | git.io/normalize */
+/* normalize.css v2.1.2 | MIT Licemse | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitioms
    ========================================================================== */
@@ -4535,7 +4535,7 @@ a:focus {
   transition: background-color 0.09s ease-in; }
 
 .snd {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100vh; }
 
 .snd h1 {
