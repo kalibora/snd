@@ -107,6 +107,12 @@ A full player could look like this:
 <button class="next">Next</button>
 ```
 
+### Time
+
+```html
+<input class="time" type="range" value="0" />
+```
+
 ### Current time
 
 ```html
