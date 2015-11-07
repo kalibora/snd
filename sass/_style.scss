@@ -5,10 +5,11 @@
 */
 
 .header {
-    background-image: url(/snd/img/bg.jpg);
-    background-repeat: no-repeat;
+    background-image: url(/snd/img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -100,3 +101,9 @@
         margin-left: 1.55rem;
     }
 }
+
+/*@media screen and (min-width: 60em) {
+    .header {
+        background-attachment: fixed;
+    }
+}*/
