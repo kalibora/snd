@@ -2,22 +2,6 @@
 
    BORDER WIDTHS
 
-   Base:
-     bw = border-width
-
-   Modifiers:
-     0 = 0 width border
-     1 = 1st step in border-width scale
-     2 = 2nd step in border-width scale
-     3 = 3rd step in border-width scale
-     4 = 4th step in border-width scale
-     5 = 5th step in border-width scale
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
-
 */
 
 .bw0 { border-width: 0; }

@@ -1,13 +1,15 @@
 <head>
-    <title>{% if page.title %}{{ site.name }} / {{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+    <title>{{ site.name }}</title>
     <meta charset="utf-8">
     <meta name="author" content="{{ site.author }}">
     <meta name="description" content="{{ site.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="stylesheet" href="{{ site.path }}css/min.css">
 <!--    <link rel="stylesheet" href="{{ site.path }}css/full.css">-->
+    <script src="https://use.typekit.net/byo4ghi.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="{{ site.path }}src/snd.min.js"></script>
+    <script src="{{ site.path }}src/snd.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="{{ site.path }}favicon/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ site.path }}favicon/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ site.path }}favicon/apple-touch-icon-72x72.png">

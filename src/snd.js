@@ -9,15 +9,18 @@
     if(!$) return console.log('snd.js requires jQuery');
 
     // The plugin
-    var Snd = function(t, a, s) {
+    var Snd = function(t, a, s, o) {
 
         // Audio
         var audio = {
+            playing  :  false,
             looped   :  false,
             muted    :  false,
             toggled  :  false,
-            seconds  :  0,
-            init     : (function() { ($.isArray(s)) ? a.src = s[0] : a.src = s; })(),
+            init     : (function() { 
+                         ($.isArray(s)) ? a.src = s[0] : a.src = s;
+                         if(typeof o !== 'undefined') {
+                            if(o['autoplay'] == true) a.play(); }})(),
             duration :  function() {  
                          t.find('.time').attr('max', a.duration);
                          t.find('.duration').html(audio.calc(a.duration));
@@ -25,10 +28,17 @@
             time     :  function() {  
                          t.find('.time').val(a.currentTime); 
                          t.find('.currenttime').html(audio.calc(a.currentTime));
-                         if($.isArray(s)) if(t.find('.time').val() == Math.floor(t.find('.time').attr('max'))) playlist.next(); },
+                         if($.isArray(s) && t.find('.time').val() == Math.floor(t.find('.time').attr('max')) && s.length - 1 != playlist.current) playlist.next(); 
+                         if($.isArray(s) && t.find('.time').val() == Math.floor(t.find('.time').attr('max')) && s.length - 1 == playlist.current) {
+                             audio.playing = false;
+                             audio.toggle(); }},
             settime  :  function() {  a.currentTime = $(this).val(); },
-            play     :  function() {  a.play();  },
-            pause    :  function() {  a.pause(); },
+            play     :  function() {
+                         audio.playing = true;
+                         a.play(); },
+            pause    :  function() {  
+                         audio.playing = false;
+                         a.pause(); },
             loop     :  function() { (audio.looped == false) ? a.loop  = audio.looped = true : a.loop  = audio.looped = false; },
             mute     :  function() { (audio.muted  == false) ? a.muted = audio.muted  = true : a.muted = audio.muted  = false; },
             toggle   :  function() { 
@@ -36,12 +46,12 @@
                             t.find('.toggle-play').hide();
                             t.find('.toggle-pause').show();
                             audio.toggled = true;
-                            a.play();
+                            audio.play();
                          } else {
                             t.find('.toggle-play').show();
                             t.find('.toggle-pause').hide();
                             audio.toggled = false;
-                            a.pause(); }},
+                            audio.pause(); }},
             calc     :  function(y) { 
                          var z = Math.floor(y / 60);
                          z = (z >= 10) ? z : '0' + z;
@@ -56,7 +66,7 @@
             update  :  function() {
                         a.src = s[playlist.current];
                         a.load();
-                        a.play(); },
+                        audio.play(); },
             change  :  function() {
                         if(t.find('.toggle').length > 0) {
                             audio.toggled = false;
@@ -80,7 +90,16 @@
                             audio.toggle(); }
                         if(playlist.current != s.length - 1) { 
                             playlist.current++;
-                            playlist.update(); }}};
+                            playlist.update(); }},
+            shuffle :  function() {
+                        audio.pause();
+                        for(var i = s.length - 1; i > 0; i--) {
+                            var j = Math.floor(Math.random() * (i + 1));
+                            var t = s[i];
+                            s[i] = s[j];
+                            s[j] = t; }
+                        playlist.current = 0;
+                        playlist.update(); }};
 
         // Event listener
         var listener = (function() {
@@ -101,14 +120,15 @@
                 t.find('.prev').on('click', playlist.prev);
                 t.find('.next').on('click', playlist.next);
                 t.find('.playlist_item').on('click', playlist.change); }})();
+                t.find('.shuffle').on('click', playlist.shuffle);
     };
     
     // Multiple instances
-    $.fn.snd = function(s) {  
+    $.fn.snd = function(s, o) {  
         return this.each(function() {
             var t = $(this);
             var a = new Audio();
-            var i = new Snd(t, a, s);
+            var i = new Snd(t, a, s, o);
         });
     };
 })(window.jQuery)

@@ -1,4 +1,4 @@
-# snd
+# SND
 
 jQuery Audio Player.
 
@@ -37,6 +37,13 @@ $(document).ready(function() {
 });
 ```
 
+And set an autoplay:
+```javascript
+$(document).ready(function() {
+    $('.snd').snd('source/to/audio', { autoplay: true });
+});
+```
+
 ## Controls
 
 A full player could look like this:
@@ -49,6 +56,7 @@ A full player could look like this:
     </div>
     <button class="prev">Prev</button>
     <button class="next">Next</button>
+    <button class="shuffle">Shuffle</button>
     <input class="time" type="range" value="0" />
     <span class="currenttime">00:00</span>/
     <span class="duration">00:00</span>
@@ -105,6 +113,12 @@ A full player could look like this:
 
 ```html
 <button class="next">Next</button>
+```
+
+### Shuffle
+
+```html
+<button class="shuffle">Shuffle</button>
 ```
 
 ### Time

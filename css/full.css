@@ -338,9 +338,6 @@ table {
 
    COLOR VARIABLES
 
-   Variables to set colors for
-   color, background-color, and border-color
-
 */
 /* variables */
 /* Selection colors */
@@ -348,11 +345,6 @@ table {
 /*
 
   BOX SIZING
-
-  A saner box-model.
-  Only applied to unqualified elements where this model makes semse.
-
-  Apply .border-box where needed.
 
 */
 nav,
@@ -424,18 +416,6 @@ input[type="password"]:after,
 
    BACKGROUND SIZE
 
-   Base:
-    bg = background-size
-
-   Modifiers:
-    cv = cover
-    cn = contain
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
-
 */
 .bg-cv {
   background-size: cover; }
@@ -459,35 +439,7 @@ input[type="password"]:after,
 
    BORDER BASE
 
-   Use border-base in combination with setting text color
-   or by using extemsioms from border-color module.
-
-   Examples:
-   To set a border of blue on all sides:
-   <div class="ba b--blue"></div>
-
-   To set a border on top of orange
-   <div class="bt b--orange"></div>
-
-   Base:
-    b = border
-
-   Modifiers:
-     n = none, no border-style or border-width
-     a = all
-     t = top
-     r = right
-     b = bottom
-     l = left
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
-
 */
-/* The extra `.bn` is required to boost the specificity, which is needed
- * sometimes if you are setting the border to 0. */
 .bn {
   border-style: solid;
   border-width: 0; }
@@ -605,16 +557,6 @@ input[type="password"]:after,
 /*
 
    BORDER COLORS
-
-   Use in cobmination with the _borders.css module
-   Or for more flexibility the _border-styles.css and _border-widths.css modules
-
-   Base:
-     b-- = border
-
-   Modifiers:
-     Add a border color. There is a one to one mapping of color values
-     in the _colors.css module.
 
  */
 .b--black {
@@ -837,24 +779,6 @@ input[type="password"]:after,
 
    BORDER RADIUS
 
-   Base:
-     br   = border-radius
-
-   Modifiers:
-     n    = none
-     1    = 1st step in scale
-     2    = 2nd step in scale
-     3    = 3rd step in scale
-     4    = 4th step in scale
-     5    = 5th step in scale
-     circ = circle
-     -100 = 100%
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
-
 */
 .brn {
   border-radius: 0; }
@@ -920,19 +844,6 @@ input[type="password"]:after,
 
    BORDER STYLES
 
-   Base:
-     bs = border-style
-
-   Modifiers:
-     none   = none
-     dotted = dotted
-     solid  = solid
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
-
  */
 .bs-none {
   border-style: none; }
@@ -962,22 +873,6 @@ input[type="password"]:after,
 /*
 
    BORDER WIDTHS
-
-   Base:
-     bw = border-width
-
-   Modifiers:
-     0 = 0 width border
-     1 = 1st step in border-width scale
-     2 = 2nd step in border-width scale
-     3 = 3rd step in border-width scale
-     4 = 4th step in border-width scale
-     5 = 5th step in border-width scale
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
 
 */
 .bw0 {
@@ -1195,25 +1090,6 @@ input[type="password"]:after,
 
    DISPLAY
 
-   Base:
-    d = display
-
-   Modifiers:
-    n     = none
-    b     = block
-    ib    = inline-block
-    it    = inline-table
-    t     = table
-    tc    = table-cell
-    tr    = table-row
-    tcol  = table-column
-    tcolg = table-column-group
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
-
 */
 .dn {
   display: none; }
@@ -1299,25 +1175,6 @@ input[type="password"]:after,
 
    FLOATS
 
-   1. Floated elements are automatically rendered as block level elements.
-      Setting floats to display inline will fix the double margin bug in
-      ie6. You know... just in case.
-
-   2. Don't forget to clearfix your floats with .cf
-
-   Base:
-     f = float
-
-   Modifiers:
-     l = left
-     r = right
-     n = none
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
-
 */
 .fl {
   float: left;
@@ -1355,6 +1212,9 @@ input[type="password"]:after,
    FONT FAMILY GROUPS
 
 */
+body {
+  font-family: "freight-sans-pro",                  sans-serif; }
+
 .sans-serif {
   font-family: 'avenir next', avenir,                 helvetica, 'helvetica neue',                 arial,                 sans-serif; }
 
@@ -1949,38 +1809,7 @@ a:focus {
 
    WIDTHS
 
-   Base:
-     w = width
-
-   Modifiers
-     1 = 1st step in width scale
-     2 = 2nd step in width scale
-     3 = 3rd step in width scale
-     4 = 4th step in width scale
-     5 = 5th step in width scale
-
-     -10  = literal value 10%
-     -20  = literal value 20%
-     -25  = literal value 25%
-     -33  = literal value 33%
-     -34  = literal value 34%
-     -40  = literal value 40%
-     -50  = literal value 50%
-     -60  = literal value 60%
-     -75  = literal value 75%
-     -80  = literal value 80%
-     -100 = literal value 100%
-
-     -auto  = string value auto
-
-
-   Media Query Extemsioms:
-     -ms = mobile-small
-     -m  = mobile
-     -l  = large
-
 */
-/* Width Scale */
 .w1 {
   width: 1rem; }
 
@@ -3610,31 +3439,8 @@ a:focus {
   stroke: #5f008e; }
 
 /*
+
    SPACING
-
-   An eight step powers of two scale ranging from 0 to 16rem.
-
-   Legend:
-
-   p = padding
-   m = margin
-
-   a = all
-   h = horizontal
-   v = vertical
-   t = top
-   r = right
-   b = bottom
-   l = left
-
-   n = none
-   xs = extra small
-   s = small
-   m = mobile
-   l = large
-   xl = extra large
-   xxxl = extra extra large
-   xxxxl = extra extra extra large
 
 */
 .pan {
@@ -4527,6 +4333,22 @@ a:focus {
   background-repeat: no-repeat;
   height: 100vh; }
 
+.snd a {
+  margin-right: -.74rem; }
+
+.snd .fadeIn {
+  margin-top: 8rem; }
+
+.snd .toggle {
+  margin-bottom: 8rem; }
+
+.arrow {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
 .f7 {
   font-size: 10rem; }
 
@@ -4766,7 +4588,13 @@ input[type=range]:focus {
   .f8-ms {
     font-size: 7rem; }
   .snd h1 {
-    margin-left: 1.55rem; } }
+    margin-left: 2rem; }
+  .snd a {
+    margin-left: -.53rem; }
+  .snd .fadeIn {
+    margin-top: 0rem; }
+  .snd .toggle {
+    margin-bottom: 0rem; } }
 
 @media screen and (min-width: 60em) {
   .header {
