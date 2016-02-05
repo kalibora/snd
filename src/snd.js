@@ -1,5 +1,5 @@
 /*!
- * snd v0.9
+ * snd v0.9.1
  * https://github.com/chrsbrg/snd
  *
  * Copyright 2015 Christian Schellenberg
