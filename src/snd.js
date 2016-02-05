@@ -2,7 +2,7 @@
  * snd v0.9.1
  * https://github.com/chrsbrg/snd
  *
- * Copyright 2015 Christian Schellenberg
+ * Copyright 2016 Christian Schellenberg
  * Released under the MIT license
  */
 (function($) {
