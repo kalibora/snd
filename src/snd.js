@@ -1,8 +1,8 @@
 /*!
  * snd v0.9.1
- * https://github.com/chrsbrg/snd
+ * https://github.com/casabeats/snd
  *
- * Copyright 2016 Christian Schellenberg
+ * Copyright 2017 Christian Schellenberg
  * Released under the MIT license
  */
 (function($) {
