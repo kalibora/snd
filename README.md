@@ -5,20 +5,20 @@ jQuery Audio Player.
 ## Usage
 
 ```
-git clone git@github.com:casabeats/snd.git
+git clone git@github.com:chrstnschlnbrg/snd.git
 ```
 
-or [download](https://github.com/casabeats/snd/archive/1.0.zip) or use the CDN:
+or [download](https://github.com/chrstnschlnbrg/snd/archive/1.0.zip) or use the CDN:
 
 ```html
-<script src="https://raw.githubusercontent.com/casabeats/snd/gh-pages/src/snd.min.js"></script>
+<script src="https://raw.githubusercontent.com/chrstnschlnbrg/snd/gh-pages/src/snd.min.js"></script>
 ```
 
 Include jQuery and snd.min.js in your `head` tag:
 
 ```html
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://raw.githubusercontent.com/casabeats/snd/gh-pages/src/snd.min.js"></script>
+<script src="https://raw.githubusercontent.com/chrstnschlnbrg/snd/gh-pages/src/snd.min.js"></script>
 ```
 
 Asign the plugin to an element in your HTML:
@@ -162,4 +162,4 @@ The currently playing track gets the class `playing`:
 
 ## Support/Bugs
 
-If you find something weird just open a new issue on GitHub. You can also contact me via [email](mailto:hi@casabeats.com) if you have any problems using SND.
+If you find something weird just open a new issue on GitHub. You can also contact me via [email](mailto:hi@chrs.cc) if you have any problems using SND.
