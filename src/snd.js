@@ -5,9 +5,7 @@
  * Copyright 2017 Christian Schellenberg
  * Released under the MIT license
  */
-(function($) {
-    if(!$) return console.log('snd.js requires jQuery');
-
+export default function ($) {
     // The plugin
     var Snd = function(t, a, s, o) {
 
@@ -124,11 +122,11 @@
     };
     
     // Multiple instances
-    $.fn.snd = function(s, o) {  
+    $.fn.snd = function(s, o) {
         return this.each(function() {
             var t = $(this);
             var a = new Audio();
             var i = new Snd(t, a, s, o);
         });
     };
-})(window.jQuery)
+}
