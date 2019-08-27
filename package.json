@@ -8,6 +8,7 @@
   },
   "author": "Christian Schellenberg",
   "license": "MIT",
+  "version": "0.9.1",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-cssnano": "^2.0.0",
